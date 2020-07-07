@@ -1,0 +1,17 @@
+name: "env_logger"
+description:
+    "A logging implementation for `log` which is configured via an environment variable."
+
+third_party {
+  url {
+    type: HOMEPAGE
+    value: "https://crates.io/crates/env_logger"
+  }
+  url {
+    type: GIT
+    value: "https://github.com/sebasmagri/env_logger/"
+  }
+  version: "0.7.1"
+  last_upgrade_date { year: 2020 month: 6 day: 5 }
+  license_type: NOTICE
+}
