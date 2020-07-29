@@ -2,16 +2,36 @@
 {
   "presubmit": [
     {
+      "name": "env_logger_host_test_src_lib",
+      "host": true
+    },
+    {
       "name": "env_logger_device_test_src_lib"
+    },
+    {
+      "name": "env_logger_host_test_tests_init-twice-retains-filter",
+      "host": true
     },
     {
       "name": "env_logger_device_test_tests_init-twice-retains-filter"
     },
     {
+      "name": "env_logger_host_test_tests_log-in-log",
+      "host": true
+    },
+    {
       "name": "env_logger_device_test_tests_log-in-log"
     },
     {
+      "name": "env_logger_host_test_tests_log_tls_dtors",
+      "host": true
+    },
+    {
       "name": "env_logger_device_test_tests_log_tls_dtors"
+    },
+    {
+      "name": "env_logger_host_test_tests_regexp_filter",
+      "host": true
     },
     {
       "name": "env_logger_device_test_tests_regexp_filter"
