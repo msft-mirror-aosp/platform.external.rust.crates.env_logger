@@ -15,6 +15,9 @@ rust_defaults {
 rust_test_host {
     name: "env_logger_host_test_src_lib",
     defaults: ["env_logger_defaults"],
+    test_options: {
+        unit_test: true,
+    },
 }
 
 rust_test {
@@ -41,6 +44,9 @@ rust_test_host {
     name: "env_logger_host_test_tests_init-twice-retains-filter",
     defaults: ["env_logger_defaults_env_logger"],
     srcs: ["tests/init-twice-retains-filter.rs"],
+    test_options: {
+        unit_test: true,
+    },
 }
 
 rust_test {
@@ -53,6 +59,9 @@ rust_test_host {
     name: "env_logger_host_test_tests_log-in-log",
     defaults: ["env_logger_defaults_env_logger"],
     srcs: ["tests/log-in-log.rs"],
+    test_options: {
+        unit_test: true,
+    },
 }
 
 rust_test {
@@ -65,6 +74,9 @@ rust_test_host {
     name: "env_logger_host_test_tests_log_tls_dtors",
     defaults: ["env_logger_defaults_env_logger"],
     srcs: ["tests/log_tls_dtors.rs"],
+    test_options: {
+        unit_test: true,
+    },
 }
 
 rust_test {
@@ -77,6 +89,9 @@ rust_test_host {
     name: "env_logger_host_test_tests_regexp_filter",
     defaults: ["env_logger_defaults_env_logger"],
     srcs: ["tests/regexp_filter.rs"],
+    test_options: {
+        unit_test: true,
+    },
 }
 
 rust_test {
@@ -98,4 +113,4 @@ rust_library {
 
 // dependent_library ["feature_list"]
 //   cfg-if-0.1.10
-//   log-0.4.11 "std"
+//   log-0.4.13 "std"
