@@ -145,6 +145,10 @@ rust_library {
     rustlibs: [
         "liblog_rust",
     ],
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.virt",
+    ],
 }
 
 // dependent_library ["feature_list"]
