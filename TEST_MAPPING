@@ -2,31 +2,64 @@
 {
   "presubmit": [
     {
-      "name": "keystore2_test"
+      "name": "android_logger_device_test_src_lib"
     },
     {
-      "name": "env_logger_device_test_tests_regexp_filter"
+      "name": "android_logger_device_test_tests_config_log_level"
+    },
+    {
+      "name": "android_logger_device_test_tests_default_init"
+    },
+    {
+      "name": "android_logger_device_test_tests_multiple_init"
+    },
+    {
+      "name": "doh_unit_test"
     },
     {
       "name": "env_logger_device_test_src_lib"
     },
     {
-      "name": "env_logger_device_test_tests_log-in-log"
-    },
-    {
       "name": "env_logger_device_test_tests_init-twice-retains-filter"
     },
     {
-      "name": "libsqlite3-sys_device_test_src_lib"
+      "name": "env_logger_device_test_tests_log-in-log"
     },
     {
-      "name": "android_logger_device_test_src_lib"
+      "name": "env_logger_device_test_tests_log_tls_dtors"
+    },
+    {
+      "name": "env_logger_device_test_tests_regexp_filter"
+    },
+    {
+      "name": "keystore2_selinux_concurrency_test"
     },
     {
       "name": "keystore2_selinux_test"
     },
     {
-      "name": "env_logger_device_test_tests_log_tls_dtors"
+      "name": "keystore2_test"
+    },
+    {
+      "name": "libsqlite3-sys_device_test_src_lib"
+    },
+    {
+      "name": "logger_device_test_config_log_level"
+    },
+    {
+      "name": "logger_device_test_default_init"
+    },
+    {
+      "name": "logger_device_test_env_log_level"
+    },
+    {
+      "name": "logger_device_test_multiple_init"
+    },
+    {
+      "name": "logger_device_unit_tests"
+    },
+    {
+      "name": "vpnprofilestore_test"
     }
   ]
 }
