@@ -59,7 +59,7 @@
       "name": "logger_device_unit_tests"
     },
     {
-      "name": "vpnprofilestore_test"
+      "name": "legacykeystore_test"
     }
   ]
 }
