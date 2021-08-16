@@ -38,7 +38,7 @@ license {
 }
 
 rust_defaults {
-    name: "env_logger_defaults",
+    name: "env_logger_test_defaults",
     crate_name: "env_logger",
     srcs: ["src/lib.rs"],
     test_suites: ["general-tests"],
@@ -51,7 +51,7 @@ rust_defaults {
 
 rust_test_host {
     name: "env_logger_host_test_src_lib",
-    defaults: ["env_logger_defaults"],
+    defaults: ["env_logger_test_defaults"],
     test_options: {
         unit_test: true,
     },
@@ -59,11 +59,11 @@ rust_test_host {
 
 rust_test {
     name: "env_logger_device_test_src_lib",
-    defaults: ["env_logger_defaults"],
+    defaults: ["env_logger_test_defaults"],
 }
 
 rust_defaults {
-    name: "env_logger_defaults_env_logger",
+    name: "env_logger_test_defaults_env_logger",
     crate_name: "env_logger",
     test_suites: ["general-tests"],
     auto_gen_config: true,
@@ -77,7 +77,7 @@ rust_defaults {
 
 rust_test_host {
     name: "env_logger_host_test_tests_init-twice-retains-filter",
-    defaults: ["env_logger_defaults_env_logger"],
+    defaults: ["env_logger_test_defaults_env_logger"],
     srcs: ["tests/init-twice-retains-filter.rs"],
     test_options: {
         unit_test: true,
@@ -86,13 +86,13 @@ rust_test_host {
 
 rust_test {
     name: "env_logger_device_test_tests_init-twice-retains-filter",
-    defaults: ["env_logger_defaults_env_logger"],
+    defaults: ["env_logger_test_defaults_env_logger"],
     srcs: ["tests/init-twice-retains-filter.rs"],
 }
 
 rust_test_host {
     name: "env_logger_host_test_tests_log-in-log",
-    defaults: ["env_logger_defaults_env_logger"],
+    defaults: ["env_logger_test_defaults_env_logger"],
     srcs: ["tests/log-in-log.rs"],
     test_options: {
         unit_test: true,
@@ -101,13 +101,13 @@ rust_test_host {
 
 rust_test {
     name: "env_logger_device_test_tests_log-in-log",
-    defaults: ["env_logger_defaults_env_logger"],
+    defaults: ["env_logger_test_defaults_env_logger"],
     srcs: ["tests/log-in-log.rs"],
 }
 
 rust_test_host {
     name: "env_logger_host_test_tests_log_tls_dtors",
-    defaults: ["env_logger_defaults_env_logger"],
+    defaults: ["env_logger_test_defaults_env_logger"],
     srcs: ["tests/log_tls_dtors.rs"],
     test_options: {
         unit_test: true,
@@ -116,13 +116,13 @@ rust_test_host {
 
 rust_test {
     name: "env_logger_device_test_tests_log_tls_dtors",
-    defaults: ["env_logger_defaults_env_logger"],
+    defaults: ["env_logger_test_defaults_env_logger"],
     srcs: ["tests/log_tls_dtors.rs"],
 }
 
 rust_test_host {
     name: "env_logger_host_test_tests_regexp_filter",
-    defaults: ["env_logger_defaults_env_logger"],
+    defaults: ["env_logger_test_defaults_env_logger"],
     srcs: ["tests/regexp_filter.rs"],
     test_options: {
         unit_test: true,
@@ -131,7 +131,7 @@ rust_test_host {
 
 rust_test {
     name: "env_logger_device_test_tests_regexp_filter",
-    defaults: ["env_logger_defaults_env_logger"],
+    defaults: ["env_logger_test_defaults_env_logger"],
     srcs: ["tests/regexp_filter.rs"],
 }
 
