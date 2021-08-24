@@ -14,6 +14,9 @@
       "name": "android_logger_device_test_tests_multiple_init"
     },
     {
+      "name": "authfs_device_test_src_lib"
+    },
+    {
       "name": "doh_unit_test"
     },
     {
@@ -41,6 +44,9 @@
       "name": "keystore2_test"
     },
     {
+      "name": "legacykeystore_test"
+    },
+    {
       "name": "libsqlite3-sys_device_test_src_lib"
     },
     {
@@ -59,7 +65,7 @@
       "name": "logger_device_unit_tests"
     },
     {
-      "name": "legacykeystore_test"
+      "name": "virtualizationservice_device_test"
     }
   ]
 }
