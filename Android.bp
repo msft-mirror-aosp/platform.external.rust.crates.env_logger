@@ -138,6 +138,7 @@ rust_test {
 rust_library {
     name: "libenv_logger",
     host_supported: true,
+    vendor_available: true,
     crate_name: "env_logger",
     srcs: ["src/lib.rs"],
     edition: "2018",
