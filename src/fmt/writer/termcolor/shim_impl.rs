@@ -1,11 +1,11 @@
-use std::{io, sync::Mutex};
+use std::io;
 
-use crate::fmt::{WritableTarget, WriteStyle};
+use crate::fmt::{Target, WriteStyle};
 
 pub(in crate::fmt::writer) mod glob {}
 
 pub(in crate::fmt::writer) struct BufferWriter {
-    target: WritableTarget,
+    target: Target,
 }
 
 pub(in crate::fmt) struct Buffer(Vec<u8>);
@@ -13,23 +13,13 @@ pub(in crate::fmt) struct Buffer(Vec<u8>);
 impl BufferWriter {
     pub(in crate::fmt::writer) fn stderr(_is_test: bool, _write_style: WriteStyle) -> Self {
         BufferWriter {
-            target: WritableTarget::Stderr,
+            target: Target::Stderr,
         }
     }
 
     pub(in crate::fmt::writer) fn stdout(_is_test: bool, _write_style: WriteStyle) -> Self {
         BufferWriter {
-            target: WritableTarget::Stdout,
-        }
-    }
-
-    pub(in crate::fmt::writer) fn pipe(
-        _is_test: bool,
-        _write_style: WriteStyle,
-        pipe: Box<Mutex<dyn io::Write + Send + 'static>>,
-    ) -> Self {
-        BufferWriter {
-            target: WritableTarget::Pipe(pipe),
+            target: Target::Stdout,
         }
     }
 
@@ -40,12 +30,12 @@ impl BufferWriter {
     pub(in crate::fmt::writer) fn print(&self, buf: &Buffer) -> io::Result<()> {
         // This impl uses the `eprint` and `print` macros
         // instead of using the streams directly.
-        // This is so their output can be captured by `cargo test`.
-        match &self.target {
-            // Safety: If the target type is `Pipe`, `target_pipe` will always be non-empty.
-            WritableTarget::Pipe(pipe) => pipe.lock().unwrap().write_all(&buf.0)?,
-            WritableTarget::Stdout => print!("{}", String::from_utf8_lossy(&buf.0)),
-            WritableTarget::Stderr => eprint!("{}", String::from_utf8_lossy(&buf.0)),
+        // This is so their output can be captured by `cargo test`
+        let log = String::from_utf8_lossy(&buf.0);
+
+        match self.target {
+            Target::Stderr => eprint!("{}", log),
+            Target::Stdout => print!("{}", log),
         }
 
         Ok(())
