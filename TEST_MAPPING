@@ -25,6 +25,9 @@
   ],
   "presubmit": [
     {
+      "name": "ZipFuseTest"
+    },
+    {
       "name": "authfs_device_test_src_lib"
     },
     {
@@ -44,6 +47,9 @@
     },
     {
       "name": "env_logger_test_tests_regexp_filter"
+    },
+    {
+      "name": "keystore2_legacy_blobs_test"
     },
     {
       "name": "keystore2_selinux_concurrency_test"
@@ -78,6 +84,9 @@
   ],
   "presubmit-rust": [
     {
+      "name": "ZipFuseTest"
+    },
+    {
       "name": "authfs_device_test_src_lib"
     },
     {
@@ -97,6 +106,9 @@
     },
     {
       "name": "env_logger_test_tests_regexp_filter"
+    },
+    {
+      "name": "keystore2_legacy_blobs_test"
     },
     {
       "name": "keystore2_selinux_concurrency_test"
