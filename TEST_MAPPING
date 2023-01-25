@@ -11,6 +11,9 @@
       "path": "external/rust/crates/crc32fast"
     },
     {
+      "path": "external/rust/crates/flate2"
+    },
+    {
       "path": "external/rust/crates/libsqlite3-sys"
     },
     {
@@ -31,7 +34,16 @@
       "name": "authfs_device_test_src_lib"
     },
     {
+      "name": "bluetooth_with_facades.test"
+    },
+    {
+      "name": "compos_verify.test"
+    },
+    {
       "name": "doh_unit_test"
+    },
+    {
+      "name": "encryptedstore.test"
     },
     {
       "name": "env_logger_test_src_lib"
@@ -49,6 +61,9 @@
       "name": "env_logger_test_tests_regexp_filter"
     },
     {
+      "name": "fd_server.test"
+    },
+    {
       "name": "keystore2_legacy_blobs_test"
     },
     {
@@ -62,6 +77,18 @@
     },
     {
       "name": "legacykeystore_test"
+    },
+    {
+      "name": "libpvmfw_avb.integration_test"
+    },
+    {
+      "name": "libuwb_adaptation_jni_tests"
+    },
+    {
+      "name": "libuwb_core_tests"
+    },
+    {
+      "name": "libuwb_uci_jni_rust_tests"
     },
     {
       "name": "logger_device_unit_tests"
@@ -79,7 +106,19 @@
       "name": "logger_test_multiple_init"
     },
     {
-      "name": "virtualizationservice_device_test"
+      "name": "open_then_run.test"
+    },
+    {
+      "name": "rialto_test"
+    },
+    {
+      "name": "virtualizationmanager_device_test"
+    },
+    {
+      "name": "vm.test"
+    },
+    {
+      "name": "vmbase_example.integration_test"
     }
   ],
   "presubmit-rust": [
@@ -90,7 +129,16 @@
       "name": "authfs_device_test_src_lib"
     },
     {
+      "name": "bluetooth_with_facades.test"
+    },
+    {
+      "name": "compos_verify.test"
+    },
+    {
       "name": "doh_unit_test"
+    },
+    {
+      "name": "encryptedstore.test"
     },
     {
       "name": "env_logger_test_src_lib"
@@ -108,6 +156,9 @@
       "name": "env_logger_test_tests_regexp_filter"
     },
     {
+      "name": "fd_server.test"
+    },
+    {
       "name": "keystore2_legacy_blobs_test"
     },
     {
@@ -121,6 +172,18 @@
     },
     {
       "name": "legacykeystore_test"
+    },
+    {
+      "name": "libpvmfw_avb.integration_test"
+    },
+    {
+      "name": "libuwb_adaptation_jni_tests"
+    },
+    {
+      "name": "libuwb_core_tests"
+    },
+    {
+      "name": "libuwb_uci_jni_rust_tests"
     },
     {
       "name": "logger_device_unit_tests"
@@ -138,7 +201,19 @@
       "name": "logger_test_multiple_init"
     },
     {
-      "name": "virtualizationservice_device_test"
+      "name": "open_then_run.test"
+    },
+    {
+      "name": "rialto_test"
+    },
+    {
+      "name": "virtualizationmanager_device_test"
+    },
+    {
+      "name": "vm.test"
+    },
+    {
+      "name": "vmbase_example.integration_test"
     }
   ]
 }
